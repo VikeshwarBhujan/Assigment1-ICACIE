@@ -131,3 +131,6 @@ h3{
 ul,ol  {
     padding: 0 5rem;
 }
+p {
+    text-align: justify;
+}

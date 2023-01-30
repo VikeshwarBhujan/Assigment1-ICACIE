@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .header {
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+.slideshow-container {
+  max-width: 500px;
+  height: 400px;
+  margin: auto;
   position: relative;
+  overflow: hidden;
 }
 
-.header img {
-  width: 100%;
-  height: auto;
-  display: block;
+.mySlides {
+  position: absolute;
+  height: 400px;
+  object-fit: cover;
+  animation: slideShow 5s ease-in-out infinite;
 }
 
-button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.prev, .next {
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-button:hover {
-  background-color: #2980b9;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-button:active {
-  transform: translateY(2px);
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-    </style>
+  </style>
 </head>
 <body>
-    <div class="header">
-        <img src="images/Committee.png" alt="Header Image">
-        <div class="buttons">
-          <button>Button 1</button>
-          <button>Button 2</button>
-          <button>Button 3</button>
-          <button>Button 4</button>
-        </div>
-      </div>
-      
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="images/Travel/travel1.png" >
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/Travel/travel2.png" >
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/Travel/travel3.png" >
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
 </body>
 </html>
