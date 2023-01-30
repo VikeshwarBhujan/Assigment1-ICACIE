@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/544e5cc811.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script> 
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    
+    <title>Header</title>
+    <link rel="stylesheet" href="">
+<style>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30rem;
+  height: 40rem;
+  margin: 1rem;
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: .2rem .2rem .8rem var();
+  margin-bottom: 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.sightseeing__card:hover {
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+  transform: translateY(-1rem);
+}
+
+.sightseeing__card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.sightseeing__card:hover img {
+  transform: scale(1.1);
+}
+
+.card h2 {
+  padding: 20px;
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.card p {
+  padding: 0 20px 20px;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.card button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #555;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="travel__container">
+        <div class="sightseeing__card">
+          <img src="images/hotel/hotel1.png" alt="Image 1">
+          <h2>Sight 1</h2>
+          <button>Learn More</button>
+        </div>
+        <div class="card">
+          <img src="image2.jpg" alt="Image 2">
+          <h2>Sight 2</h2>
+          <button>Learn More</button>
+        </div>
+        <div class="card">
+          <img src="image3.jpg" alt="Image 3">
+          <h2>Sight 3</h2>
+          <button>Learn More</button>
+        </div>
+      </div>
+      
+      </div>
+      
+</body>
+</html>

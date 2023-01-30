@@ -134,3 +134,17 @@ ul,ol  {
 p {
     text-align: justify;
 }
+button {
+    transform: translateX(-50%);
+    padding: 1rem 1rem;
+    background-color: var(--color-blue-dark-1);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: var(--color-blue-light-1);
+}
