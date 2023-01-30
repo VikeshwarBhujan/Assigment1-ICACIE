@@ -1302,8 +1302,8 @@ h4 > a {
 }
 /* sightseeing */
 .sightseeing__card {
-    width: 25rem;
-    height: 35rem;
+    width: 30rem;
+    height: 40rem;
     margin: 1rem;
     background-color: white;
     border: .5px solid gray;
@@ -1320,30 +1320,30 @@ h4 > a {
     transform: translateY(-1rem);
   }
   
-  .sightseeing__card img {
+  .sightseeing__card > img {
     width: 100%;
     height: 70%;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
   }
   
-  .sightseeing__card:hover img {
+  .sightseeing__card:hover > img {
     transform: scale(1.1);
   }
   
-  .sightseeing__card h2 {
+  .sightseeing__card > h2 {
     padding:.5rem;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
-  .sightseeing__card p {
+  .sightseeing__card > p {
     text-align: center;
     margin-top: -1rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #555;
   }
   
-  .sightseeing__card button {
+  .sightseeing__card > button {
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -1356,6 +1356,10 @@ h4 > a {
     font-size: 12px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+  }
+  .sightseeing__card > button > a {
+    text-decoration: none;
+    color: white;
   }
   
   .sightseeing__card button:hover {
