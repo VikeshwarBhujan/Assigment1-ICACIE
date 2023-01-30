@@ -1195,14 +1195,13 @@ blockquote > span {
     left: 33%;
     width: 30rem;
 }
-.travel__section > .travel__content> .p {
-    color: red;
-}
 .travel__section > .travel__content> .h3_header {
     font-size: 3rem;
 }
-.travel__section > .travel__content> .p {
+.travel__section > .travel__content> h5 {
+    font-size: 1.6rem;
     color: red;
+    font-weight: bold;
 }
     
 /* Responsive layout - reduces the size of the cards on smaller screens */
@@ -1267,6 +1266,26 @@ blockquote > span {
 
       }
   }
+  /* Travel Infomation */
+.travel__content > .p_bold {
+    font-weight: bolder;
+}
+h5 > span {
+    font-weight: bolder;
+    color: var(--color-dark);
+}
+P > a {
+    text-decoration: none;
+    color: var(--color-blue-dark-2);
+    padding: 1rem 1rem;
+}
+p > a:hover {
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+
 /**************************************************************/
 
 .search{
