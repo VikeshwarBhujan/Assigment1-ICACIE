@@ -1284,6 +1284,16 @@ p > a:hover {
     padding: 1rem 1rem;
     font-weight: bold;
 }
+P > a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+}
+p > a:hover {
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
 
 
 /**************************************************************/
