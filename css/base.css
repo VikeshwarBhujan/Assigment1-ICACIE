@@ -1,0 +1,46 @@
+:root{
+    --color-grey-light:rgb(167,169,172);
+    --color-blue-dark-1:rgb(0,125,190);
+    --color-blue-dark-2:rgb(0,88,138);
+    --color-blue-light-1:rgb(0,171,189);
+    --color-blue-light-2:rgb(84,198,211);
+    --color-blue-light-3:rgb(0,183,199);
+    --color-dark:rgb(35,31,32);
+    --color-grey-dark:rgb(99,100,102);
+
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    content: fit;
+    /* If you set an element's width to 100 pixels, 
+    that 100 pixels will include any border or padding you added, 
+    and the content box will shrink to absorb that extra width */
+  }
+  html{
+    font-size: 62.5%;
+    /* default browser font size is 16 px, this mean that 1rem = 16px
+    62.5 / 100 * 16 = 10px, Now 1 rem = 10 */
+  }
+  body{
+    font-family: Optima, Century Gothic;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: purple;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    /* background: url(../images/Committee.png) no-repeat center center;  */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  } 
+  @media(max-width: 75rem) {
+    .body{
+      width: 80%;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Add a responsive layout */
+        .container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          padding: 20px;
+          margin: 20px;
+          width: 200px;
+          text-align: center;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Change the background color of the buttons on hover */
+        .btn:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Style the content sections */
+        .section {
+          padding: 50px;
+          display: none;
+        }
+      </style>
+</head>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#navbar").load("navbar.html"); 
+        });
+        $(document).ready(function() {
+            $("#button1").click(function() {
+                $("html, body").animate({ scrollTop: $("#section1").offset().top }, 1000);
+            });
+            $("#button2").click(function() {
+                $("html, body").animate({ scrollTop: $("#section2").offset().top }, 1000);
+            });
+            $("#button3").click(function() {
+                $("html, body").animate({ scrollTop: $("#section3").offset().top }, 1000);
+            });
+            $("#button4").click(function() {
+                $("html, body").animate({ scrollTop: $("#section4").offset().top }, 1000);
+            });
+        });
+        </script> 
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <!-- body container -->
+    <div class="body_container">
+    <!-- content contains main and aside -->
+    <div class="content">
+        <main class="icacie-info">
+            <section id="section2" class="section">
+            <h2>Welcome to ICACIE 2023</h2>
+            <div class="container__column">
+                <img class="home__welcome__img" src="images/welcome_icacie.jpg" alt="Welcome_icacie">
+                <p> <span>ICACIE 2023</span> (International Conference on Advanced Computing & Intelligent Engineering)  focuses on both theory and applications in the broad areas of advanced computing and intelligent engineering. ICACIE is a multidisciplinary conference organized with the objective of bringing together academicians, scientists, researchers from industry, research scholars, and students working in all areas of advanced computing and intelligent engineering. The conference will provide the authors and listeners with opportunities for national and international collaboration and networking among universities and institutions from India and abroad for promoting research and developing technologies.</p>
+                <p> The aim of this conference is to promote the translation of basic research into applied investigation and convert applied investigation into practice. This conference will also create awareness about the importance of basic scientific research in different fields matching with the current trends. The conference will provide the flavor of keynote lectures by eminent speakers from different areas & panel discussion by industry people. The scope of the conference includes all areas of Advanced Computing and Intelligent Engineering.</p>
+            </div>
+            </section>
+            <section id="section1" class="section">
+                <div class="container__column">
+                    <h2>ICACIE 2023 goes <span>online!</span></h2>
+                    <hr class="line">
+                    <p>Due to the sanitary measures and travel restrictions related to the coronavirus pandemic, the chairs of the ICACIE2023 Conference have decided to hold this year’s conference as a virtual, online-only event.</p>
+                    <p>Some important matters relating to the virtual conference of ICACIE 2023 are as follows:</p>
+                    <ul>
+                        <li>All accepted papers will be published by Springer in its LNNS series.</li>
+                        <li>Paper submission deadline and important dates stay the same.</li>
+                        <li>The virtual conference is programmed and adapted to better suit time differences, online presentation, and discussion formats.</li>
+                    </ul>
+                    <p>List of Topics</p>
+                    <ul>
+                        <li>Advanced Computing</li>
+                        <li>Intelligent Networking</li>
+                    </ul>
+                </div>
+                </section>
+                <button class="btn" id="button1">Button 1</button>
+                <button class="btn" id="button2">Button 2</button>
+            </main>
+    </div>
+</div>
+
+</body>
+</html>

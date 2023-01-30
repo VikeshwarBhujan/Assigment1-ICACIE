@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Add a responsive layout */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      /* Style the cards */
+      .card {
+        width: 150px;
+        height: 200px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+      
+      /* Add an image to the cards */
+      .card img {
+        width: 100%;
+        height: 80% ;
+        object-fit: cover;
+      }
+      
+      /* Add a description to the cards */
+      .card p {
+        padding: 10px 20px;
+        font-size: .2rem;
+      }
+      
+      /* Add a button to the cards */
+      .card button {
+        background-color: #4CAF50;
+        color: white;
+        /* padding: 10px 20px; */
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 20%;
+      }
+      
+      /* Change the background color of the cards on hover */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Responsive layout - reduces the size of the cards on smaller screens */
+      @media (max-width: 600px) {
+        .card {
+          width: 200px;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="card">
+        <img src="images/Travel/travel1.png" alt="Travel">
+        <button>Travel</button>
+      </div>
+      
+      <div class="card">
+        <img src="sightseeing.jpg" alt="Sightseeing">
+        <h2>Sightseeing</h2>
+        <p>Suggestions for nearby tourist attractions and things to do in the area.</p>
+        <button>Learn More</button>
+      </div>
+      
+      <div class="card">
+        <img src="accommodation.jpg" alt="Accommodation">
+        <h2>Accommodation</h2>
+        <p>A list of recommended hotels and places to stay near the venue.</p>
+        <button>Learn More</button>
+      </div>
+      
+      <div class="card">
+        <img src="venue.jpg" alt="Venue">
+        <h2>Venue</h2>
+        <p>Information about the venue, including its location, capacity, and available amenities.</p>
+      </div>
+    </body>   
+    </html>>
