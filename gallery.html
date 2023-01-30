@@ -10,18 +10,37 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-      $("#navbar").load("navbar.html"); 
-    });
-</script> 
-</head>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+        });
+    </script> 
+  </head>
 <body>
-<!-- header -->
 <div id="header"></div>
 <!-- navbar -->
-<div id="navbar"></div>
+<navbar class="navbar">
+  <!-- navbar_toggle -->
+  <a href="#" class="toggle__button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </a>
+  <!-- navbar__links -->
+  <ul class="navbar__links">
+      <li><a  href="home.html">Home</a></li>
+      <li><a  href="registration.html">Registration</a></li>
+      <li><a  href="#">Sponsor</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
+      <li><a  href="#">Travel Details</a></li>
+      <li><a  href="callforpaper.html">Call for Paper</a></li>
+      <li><a  href="keynote.html">Keynotes</a></li>
+      <li><a  href="committee.html">Committee</a></li>
+      <li><a  href="contactus.html">Contact</a></li>
+  </ul>
+  <!-- <button><a href="Signin.html">Signin</a></button> -->
+<!-- end of navbar -->
+</navbar>
 <!-- body container -->
 <div class="body_container">
     <!-- content contains main and aside -->
@@ -35,34 +54,74 @@
                 <h3>PHOTO <span>Gallery</span></h3>
               <!-- end of gallery__heading --> 
               </div>
-              <!-- box -->
-              <div class="box">
-                <div class="gallery__image">
-                  <img src="images/icacie/icacie1.png" alt="">
-                  <img src="images/icacie/icacie3.png" alt="">
-                  <img src="images/icacie/icacie2.png" alt="">
-                  <img src="images/icacie/icacie3.png" alt="">
+              <div class="gallery">
+                <div class="image-container">
+                  <img src="images/hotel/hotel2.png" alt="Image 1">
+                  <div class="image-title">Image</div>
                 </div>
-                <div class="gallery__image">
-                  <img src="images/icacie/icacie1.png" alt="">
-                  <img src="images/icacie/icacie3.png" alt="">
-                  <img src="images/icacie/icacie2.png" alt="">
-                  <img src="images/icacie/icacie3.png" alt="">
+                <div class="image-container">
+                  <img src="images/Committee.png" alt="Image 2">
+                  <div class="image-title">Image</div>
                 </div>
-                <div class="gallery__image">
-                  <img src="images/icacie/icacie3.png" alt="">
-                  <img src="images/icacie/icacie2.png" alt="">
-                  <img src="images/icacie/icacie1.png" alt="">
-                  <img src="images/icacie/icacie1.png" alt="">
+                <div class="image-container">
+                  <img src="images/hotel/hotel1.png" alt="Image 3">
+                  <div class="image-title">Image</div>
                 </div>
-              <!-- end of box --> 
+                <div class="image-container">
+                  <img src="images/Travel/accommodation.png" alt="Image 4">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Travel/sightseeing.png" alt="Image 5">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing1.png" alt="Image 6">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Travel/travel.png" alt="Image 7">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Travel/venue.png" alt="Image 8">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing2.png" alt="Image 9">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing3.png" alt="Image 10">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing4.png" alt="Image 11">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing5.png" alt="Image 12">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing6.png" alt="Image 13">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing7.png" alt="Image 14">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing8.png" alt="Image 15">
+                  <div class="image-title">Image</div>
+                </div>
+                <div class="image-container">
+                  <img src="images/Sightseeing/sightseeing9.png" alt="Image 16">
+                  <div class="image-title">Image</div>
+                </div>
               </div>
             <!-- end of gallery__container --> 
             </div>
-
-
-
-
         <!-- end of icacie-info -->
         </div>
     <!-- end of content -->

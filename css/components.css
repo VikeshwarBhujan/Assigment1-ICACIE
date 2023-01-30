@@ -969,7 +969,7 @@ blockquote > span {
     }
   }
 /* Gallery */
-/* .gallery__container{
+.gallery__container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -991,7 +991,7 @@ blockquote > span {
 .gallery__container > .gallery__heading > h3 > span{
     font-weight: 100;
 }
-.gallery__container > .box { 
+/* .gallery__container > .box { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1007,7 +1007,7 @@ blockquote > span {
     width: 100%;
     padding-bottom: 1.5rem;
     border-radius: .5rem;
-}
+} */
 /* mobile responsive gallery */
 @media only screen and (max-width: 70rem) {
     .gallery__container > .box { 
@@ -1026,7 +1026,7 @@ blockquote > span {
         font-size: 1rem;
         border-bottom:  .3rem solid var(--color-grey-dark);
     }
-} */
+}
 
 
 /**************************************************************/
@@ -1302,8 +1302,8 @@ h4 > a {
 }
 /* sightseeing */
 .sightseeing__card {
-    width: 30rem;
-    height: 40rem;
+    width: 25rem;
+    height: 35rem;
     margin: 1rem;
     background-color: white;
     border: .5px solid var(--color-grey-light);
@@ -1388,8 +1388,35 @@ h4 > a {
   
   
 
-/**************************************************************/
-
+/* ************************************************************ */
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+  }
+  
+  @media (max-width: 767px) {
+    footer nav ul {
+      flex-direction: column;
+    }
+  }
+  /* ************************************************************ */
 .search{
     flex: 0 0 auto;
 }
