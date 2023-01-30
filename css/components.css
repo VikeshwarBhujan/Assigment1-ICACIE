@@ -1177,78 +1177,45 @@ blockquote > span {
     display: flex;
     flex-direction: column;
   }
-  .travel__section > .travel__title {
+  .travel__section > .travel__content{
     align-items: center;
   }
-  .travel__section > .travel__title > h3 {
+  .travel__section > .travel__content> h3 {
     font-size: 2.4rem;
     text-align: center;
   }
-  .travel__section > .travel__title > h4 {
+  .travel__section > .travel__content> h4 {
     text-align: center;
     padding: 2rem 0 0 0;
   }
-  
-  .travel__section > .travel__title > .line2 {
-      position: relative;
-      background-color: var(--color-grey-light);
-      left: 20%;
-    }
-    .travel__section > .travel__title > .p {
-      color: red;
-    }
-    .travel__section > .travel__title > .h3_header {
-      font-size: 3rem;
-    }
-    .travel__section > .travel__title > .p {
-      color: red;
-    }
-    
-  /* Responsive layout - reduces the size of the cards on smaller screens */
-  @media (max-width: 60rem) {
-    .travel__container2 {
-        position: relative;
-      }
-    .travel__container > .travel__card {
-      width: 10rem;
-      height: 12rem;
-    }
-  }
-  
-@keyframes notdefined {
-    0% {
-        transform: translateX(0);
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: 0;
-    }
-    40% {
-        left: -100;
-    }
-    45% {
-        left: -100;
-    }
-    50% {
-        left: -200;
-    }
-    70% {
-        left: -200;
-    }
-    75% {
-        left: -300;
-    }
-    95% {
-        left: -300;
-    }
-    100% {
-        left: -400;
-    }
-    
+
+.travel__section > .travel__content> .line2 {
+    position: relative;
+    background-color: var(--color-grey-light);
+    left: 33%;
+    width: 30rem;
 }
-/* slideshow */
+.travel__section > .travel__content> .p {
+    color: red;
+}
+.travel__section > .travel__content> .h3_header {
+    font-size: 3rem;
+}
+.travel__section > .travel__content> .p {
+    color: red;
+}
+    
+/* Responsive layout - reduces the size of the cards on smaller screens */
+@media (max-width: 60rem) {
+.travel__container2 {
+    position: relative;
+    }
+.travel__container > .travel__card {
+    width: 10rem;
+    height: 12rem;
+}
+}
+  /* slideshow-container */
 .slideshow-container {
   width: 50%;
   position: relative;
@@ -1256,27 +1223,28 @@ blockquote > span {
   overflow: hidden;
 }
 
-.mySlides {
+.mySlides,.mySlides1 {
   display: none;
  
 }
-.mySlides > img{
+.mySlides > img, .mySlides1 > img{
   width: 100%;
-  height: 20rem;
+  height: 25rem;
+  border-radius: .5rem;
 }
-  
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 1.6rem;
-    margin-top: -2.2rem;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 .3rem .3rem 0;
+    border-radius: 0 3px 3px 0;
     user-select: none;
   }
   
@@ -1286,30 +1254,9 @@ blockquote > span {
   }
   
   .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,0.8);
   }
-  @keyframes slideShow {
-    0% {
-      opacity: 1;
-      transform: translateX(100%);
-    }
-    8% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-    17% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    25% {
-      opacity: 0;
-      transform: translateX(0%);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(0%);
-    }
-  }
+  
   @media (max-width: 60rem) {
     .mySlides > img{
         width: 100%;
@@ -1320,9 +1267,6 @@ blockquote > span {
 
       }
   }
-  
-
-
 /**************************************************************/
 
 .search{

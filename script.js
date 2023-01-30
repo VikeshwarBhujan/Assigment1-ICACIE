@@ -1,11 +1,11 @@
-
+//toggle navbar on mobile responsive
 const toggleButton = document.getElementsByClassName('toggle__button')[0]
 const navbarLinks = document.getElementsByClassName('navbar__links')[0]
  
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
-
+//toggle navbar active 
 const navItems = document.querySelectorAll('.nav-item');
 navItems.forEach(item => {
   item.addEventListener('click', function() {
@@ -14,7 +14,6 @@ navItems.forEach(item => {
     localStorage.setItem('activeNavItem', this.getAttribute('href'));
   });
 });
-
 const activeNavItem = localStorage.getItem('activeNavItem');
 if (activeNavItem) {
   const activeItem = document.querySelector(`[href="${activeNavItem}"]`);
@@ -23,7 +22,7 @@ if (activeNavItem) {
     activeItem.classList.add('active');
   }
 }
-
+//toggle section redirect on venue, travel, acc and sightseeing button
 $(document).ready(function() {
   $("#button1").click(function() {
       $("html, body").animate({ scrollTop: $("#section1").offset().top }, 1000);
@@ -39,51 +38,30 @@ $(document).ready(function() {
   });
 });
 
+//toggle 2 slideshow at the same page 
+var slideIndex = [1,1];
+var slideId = ["mySlides", "mySlides1"];
+showSlides(1, 0);
+showSlides(1, 1);
 
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 5000); // Change image every 5 seconds
-// }
-var slideIndex = 1;
-showSlides(slideIndex);
-
-setInterval(function() {
-  plusSlides(1);
-}, 5000);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, no) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {
-    slideIndex = 1;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
-
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";
 }
+//auto slide at 5 sec
+setInterval(function() {
+  for (var i = 0; i < 2; i++) {
+    plusSlides(1, i);
+  }
+  }, 5000);
+
