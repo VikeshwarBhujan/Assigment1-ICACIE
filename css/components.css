@@ -1306,7 +1306,7 @@ h4 > a {
     height: 40rem;
     margin: 1rem;
     background-color: white;
-    border: .5px solid gray;
+    border: .5px solid var(--color-grey-light);
     box-shadow: .2rem .2rem .3rem var(--color-dark);
     margin-bottom: 4rem;
     text-align: center;
@@ -1364,6 +1364,25 @@ h4 > a {
   
   .sightseeing__card button:hover {
     background-color: var(--color-blue-dark-1);
+  }
+  .travel__container > button > a {
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+  }
+  .btn > a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-blue-dark-1);
+    box-shadow: .2rem .2rem .3rem var(--color-blue-light-2);
   }
 
   

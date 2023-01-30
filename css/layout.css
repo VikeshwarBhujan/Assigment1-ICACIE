@@ -136,7 +136,7 @@ p {
 }
 button {
     padding: 1rem 1rem;
-    background-color: var(--color-blue-dark-1);
+    background-color: var(--color-dark);
     color: white;
     border: none;
     /* border-radius: .5rem; */
