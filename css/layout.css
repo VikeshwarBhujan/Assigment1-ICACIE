@@ -93,6 +93,14 @@
     background-color: var( --color-dark);
     color: whitesmoke;
     padding: .5rem;
+    font-size: 1.4rem;
+}
+.subnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-blue-light-3);
+
 }
 .footer{
     background-color: rgb(205, 54, 162);
