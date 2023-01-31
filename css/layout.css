@@ -97,9 +97,10 @@
 }
 .subnav{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color:var(--color-blue-light-3);
+    padding: .5rem;
 
 }
 .footer{
