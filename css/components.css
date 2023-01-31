@@ -1348,35 +1348,8 @@ h4 > a {
     background-color: var(--color-blue-dark-1);
     box-shadow: .2rem .2rem .3rem var(--color-blue-light-2);
   }
-/* ************************************************************ */
-/* footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  footer nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 1rem;
-  }
-  
-  @media (max-width: 70rem) {
-    footer nav ul {
-      flex-direction: column;
-    }
-  }
-  /* ************************************************************ */
-  /****************************************/
+
+  /********************************************* */
 /*    SEARCH    */
   
 .search {
@@ -1427,6 +1400,56 @@ footer {
         align-items: center;
         padding:  0 2rem;
       }
+} 
+/* ************************************************************ */
+.line3 {
+    width: 100%;
+    height: .1rem;
+    border: 0 none;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--color-grey-light);
+}
+/* footer */
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5rem;
+    background-color:var(--color-dark);
 
+}
+.footer > .footer__content  > .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.footer > .footer__content> .icons  > li  {
+    list-style: none;
+}
+.footer> .footer__content  > .icons > li > a {
+    text-decoration: none;
+}
+.footer > .footer__content > .icons > li > a > img {
+    filter:invert(1);
+    width: 1.5rem;
+}
+.footer_bottom    {
+    padding: .5rem;
+    background-color: #111;
+}
+.footer_bottom > p  {
+    font-size: 1.2rem;
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+@media(max-width: 55rem) {
+    .footer > .footer__content  > .icons {
+        width: 80%;
+    }
 } 
   

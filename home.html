@@ -9,26 +9,13 @@
     <script src="script.js" defer></script> 
     <link rel="stylesheet" href="css/main.css">
 </head>
-    <script> 
-        $(function(){
-          $("#header").load("header.html"); 
-          $("#navbar").load("navbar.html"); 
-        });
-        $(document).ready(function() {
-            $("#button1").click(function() {
-                $("html, body").animate({ scrollTop: $("#section1").offset().top }, 1000);
-            });
-            $("#button2").click(function() {
-                $("html, body").animate({ scrollTop: $("#section2").offset().top }, 1000);
-            });
-            $("#button3").click(function() {
-                $("html, body").animate({ scrollTop: $("#section3").offset().top }, 1000);
-            });
-            $("#button4").click(function() {
-                $("html, body").animate({ scrollTop: $("#section4").offset().top }, 1000);
-            });
-        });
-        </script> 
+<script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#navbar").load("navbar.html"); 
+      $("#footer").load("footer.html"); 
+    });
+</script> 
   </head>
   <body>
     <!-- header -->
@@ -70,5 +57,8 @@
     </div>
 </div>
 
+<br>
+ <!-- footer -->
+ <div id="footer"></div>
 </body>
 </html>
