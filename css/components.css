@@ -86,6 +86,9 @@
     height: 10rem;
 }
 @media(max-width: 35rem) {
+    h1 > span {
+        font-size: 1.4rem;
+       }
     .logo {
         height: 8rem;
     }
@@ -167,7 +170,7 @@
 
 
 /* mobile responsive navbar */
-@media(max-width: 75rem) {
+@media(max-width: 55rem) {
     .subnav{
         justify-content: none;
     }
