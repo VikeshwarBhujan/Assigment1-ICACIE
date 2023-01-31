@@ -1,4 +1,86 @@
 /**************************************************************/
+/* header title */
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:70rem;
+  }
+  .sub_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  }
+  h1 {
+    /* font-size: 5rem; */
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    
+  }
+  h1 > span {
+   transition: 1s;
+  }
+   h1:hover > span {
+    filter:blur(.2rem);
+    opacity: 0;
+    transform: scale(2);
+   }
+   h1 > span:nth-child(117n+1) {
+    transition-delay: 0.1s;
+   }
+   h1 > span:nth-child(117n+2) {
+    transition-delay: 0.3s;
+   }
+   h1 > span:nth-child(117n+3) {
+    transition-delay: 0.5s;
+   }
+   h1 > span:nth-child(117n+4) {
+    transition-delay: 0.7s;
+   }
+   h1 > span:nth-child(117n+5) {
+    transition-delay: 0.9s;
+   }
+   h1 > span:nth-child(117n+6) {
+    transition-delay: 1.1s;
+   }
+   h1 > span:nth-child(117n+7) {
+    transition-delay: 1.3s;
+   }
+   h1 > span:nth-child(117n+8) {
+    transition-delay: 1.5s;
+   }
+   h1 > span:nth-child(117n+8) {
+    transition-delay: 1.7s;
+   }
+   h1 > span:nth-child(117n+9) {
+    transition-delay: 1.9s;
+   }
+   h1 > span:nth-child(117n+10) {
+    transition-delay: 2.1s;
+   }
+   h1 > span:nth-child(117n+11) {
+    transition-delay: 2.3s;
+   }
+   h1 > span:nth-child(117n+12) {
+    transition-delay: 2.5s;
+   }
+   h1 > span:nth-child(13n+13) {
+    transition-delay: 2.7s;
+   }
+   h1 > span:nth-child(117n+14) {
+    transition-delay: 2.9s;
+   }
+   h1 > span:nth-child(117n+14) {
+    transition-delay: 3.1s;
+   }
+   h1 > span:nth-child(117n+15) {
+    transition-delay: 2.3s;
+   }
+
+
 /* header */
 .logo{
     height: 10rem;
@@ -7,6 +89,10 @@
     .logo {
         height: 8rem;
     }
+    .header__container {
+
+        width: 100%;
+      }
 }
 
 .icacie__info > h1{
