@@ -167,7 +167,7 @@
 
 
 /* mobile responsive navbar */
-@media(max-width: 55rem) {
+@media(max-width: 75rem) {
     .subnav{
         justify-content: none;
     }
