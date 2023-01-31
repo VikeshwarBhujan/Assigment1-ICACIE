@@ -1,6 +1,7 @@
 .body_container{
     width: 60%;
-    background-color: var( --color-grey-light);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+    background-color: white;
     margin: 0 20%;
     height: auto;
 }
@@ -27,11 +28,9 @@
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: red;
 }
 .icacie-info{
     width: 100%;
-    background-color: palevioletred;
     padding: 1rem 1rem;
     flex-grow: 0;
 }
@@ -55,20 +54,18 @@
 .section{
     display: flex;
     flex-wrap: wrap; 
-    background-color: aqua;
     padding: .5rem;
 
 }
 .container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(144, 127, 255);
+
     padding: .5rem 1.5rem;
 }
 .container__column{
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
     padding: .5rem 1.5rem;
 }
 

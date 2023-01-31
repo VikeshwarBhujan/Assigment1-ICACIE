@@ -1286,7 +1286,7 @@ p > a:hover {
 }
 h4 > a {
     text-decoration: none;
-    color: white;
+    color: var(--color-blue-light-2);
     padding: 1rem 1rem;
 }
 h4 > a:hover {
