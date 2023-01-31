@@ -149,3 +149,11 @@ button {
 button:hover {
     background-color: var(--color-blue-light-1);
 }
+@media(max-width: 55rem) {
+    p {
+        text-align: justify;
+    }
+    li {
+        font-size:1.4rem;
+    }
+}
