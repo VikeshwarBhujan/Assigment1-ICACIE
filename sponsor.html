@@ -1,28 +1,157 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#navbar").load("navbar.html"); 
+      $("#footer").load("footer.html"); 
+    });
+</script> 
+</head>
+<body>
+</head>
+<body>
+<!-- header -->
+<div id="header"></div>
+<!-- navbar -->
+<div id="navbar"></div>
+<!-- body container -->
+<div class="body_container">
+    <!-- content contains main and aside -->
+    <div class="content">
+        <!-- main -->
+        <div class="icacie-info " style="width: 100%;">
+          <div class="sponsor__container">
+            <!-- Request for Financial Sponsorshi-->
+            <h3 class="h3_header">Request for Financial Sponsorship</h3>
+            <hr class="line2">
+          </div>
+            <br>
+            <p>
+              We invite financial sponsorship from Industry and Service Organizations for the ICACIE-2022 International Conference as per the rates below.
+            </p>
+            <br>
+            <p>The organizing committee is open to sponsorship in other terms such as the supply of Conference Kit, Shirts, or other materials and services.</p>
+
+            <div class="sponsor__container">
+              <div class="sponsor__card">
+                <h1>Title Sponsor</h1>
+                <p class="h5">INR 2,00,000/-</p>
+                <p>Title Sponsors are recognized as major event sponsors.
+                  Invite your clients and key personnel (maximum four people), influence the conference agenda, and speak at the event.
+                  Title Sponsorship also includes:
+                </p>
+                <ul>
+                  <li>Participation in the conference advisory board</li>
+                  <li>A prominent speaking role at the event</li>
+                  <li>Sponsorship recognition in all event marketing
+                    [including web, e-mail, social media, direct, and on-site marketing]</li>
+                  <li>An on-site exhibit display opportunity</li>
+                  <li>Opportunity for an optional pre- or post-conference workshop or online webinar,</li>
+                  <li>A custom e-mail to promote your sponsorship of the conference</li>
+                </ul>
+               </div> 
+            <div class="sponsor__card">
+              <h1>Platinum Sponsor</h1>
+              <p class="h5">INR 1,00,000/-</p>
+              <p>T4 delegates free registration, Platinum Sponsor Banner with logo and any text
+              </p>
+            </div>
+            <div class="sponsor__card">
+              <h1>Diamond Sponsor	</h1>
+              <p class="h5">INR 75,000/-</p>
+              <p>3 delegates free registration, Diamond Sponsor Banner with logo and any text
+              </p>
+            </div>
+            <div class="sponsor__card">
+              <h1>Gold Sponsorr</h1>
+              <p class="h5">INR 50,000/-</p>
+              <p>2 delegates free registration, Gold Sponsor Banner with logo and any text
+              </p>
+            </div>
+            
+            <div class="sponsor__card">
+              <h1>Silver Sponsorr</h1>
+              <p class="h5">INR 30,000/-</p>
+              <p>1 delegate free registration, Silver Sponsor Banner with logo and any text
+              </p>
+            </div>
+            <div class="sponsor__card">
+              <h1>Bronse Sponsorr</h1>
+              <p class="h5">INR 20,000/-</p>
+              <p>	Bronze Sponsor Banner with logo & any text
+              </p>
+            </div>
+           </div>
+           <br>
+           <!-- 2nd container -->
+           <div class="sponsor__container">
+            <!-- Advertisements -->
+            <h3 class="h3_header">Advertisements (color) in the Souvenir:</h3>
+            <hr class="line2">
+          </div>
+          <br>
+          <div class="sponsor__container">
+          <div class="sponsor__card">
+            <h1>Advt. Tariff</h1>
+            <p class="h5">INR 60,000/-</p>
+            <h1>Advertisement Particulars in the conference souvenir</h1>
+            <p class="center">Two pages (double spread) in center</p>
+          </div>
+          <div class="sponsor__card">
+            <h1>Advt. Tariff</h1>
+            <p class="h5">INR 45,000/-</p>
+            <h1>Advertisement Particulars in the conference souvenir</h1>
+            <p class="center"> Full page on the inner side of cover pages</p>
+          </div>
+          <div class="sponsor__card">
+            <h1>Advt. Tariff</h1>
+            <p class="h5">INR 30,000/-</p>
+            <h1>Advertisement Particulars in the conference souvenir</h1>
+            <p class="center">Full page</p>
+          </div>
+          <div class="sponsor__card">
+            <h1>Advt. Tariff</h1>
+            <p class="h5">INR 20,000/-</p>
+            <h1>Advertisement Particulars in the conference souvenir</h1>
+            <p class="center">Half-page</p>
+          </div>
+          
+         </div>
+         <br>
+         <h3> For More Details Contact : <a href="icacie2023@udm.ac.mu">icacie2023@udm.ac.mu</a> / <a href="icacie2022@gmail.com">icacie202@gmail.com</a></h3> 
+         <br>
+
+        <!-- end of icacie-info -->
+        </div>
+    <!-- end of content -->
+    </div>
+ <!-- end of body container -->   
+</div>
+</div>
+<br>
+ <!-- footer -->
+ <div id="footer"></div>
+</body>
+</html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Sponsor Page</title>
-  <style>
-    /* Add your CSS styles here */
-    .sponsor-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .sponsor-logo {
-      width: 200px;
-      height: 200px;
-      margin: 20px;
-    }
-  </style>
 </head>
 <body>
-  <h1>Our Sponsors</h1>
-  <div class="sponsor-container">
-    <img class="sponsor-logo" src="sponsor1.png" alt="Sponsor 1">
-    <img class="sponsor-logo" src="sponsor2.png" alt="Sponsor 2">
-    <img class="sponsor-logo" src="sponsor3.png" alt="Sponsor 3">
-  </div>
+
+</div>
 </body>
 </html>
