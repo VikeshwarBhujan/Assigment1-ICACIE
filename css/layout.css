@@ -43,7 +43,6 @@
 .aside{
     width: 34.5%;
     padding: 1rem;
-    background-color: rgb(35, 103, 174);
 
 }
 @media(max-width: 75rem) {
@@ -72,7 +71,7 @@
 .header{
     height: auto;
     width: 100%;
-    background-color: rgb(195, 146, 146);
+    background-color: var(--color-blue-light-3);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
