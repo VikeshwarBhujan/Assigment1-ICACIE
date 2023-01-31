@@ -39,7 +39,7 @@
     -o-background-size: cover;
     background-size: cover; */
   } 
-  @media(max-width: 75rem) {
+  @media(max-width: 80rem) {
     .body{
       width: 80%;
     }
